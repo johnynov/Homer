@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test tablelki</title>
+</head>
+<body>
+    <?php
+	$dbconn = pg_connect ("host=localhost dbname=Homer user=postgres password=postgres")
+	or die('Nie można nawiązać połączenia');
+	$querry = pg_query($dbconn, "SELECT floor.fid FROM floor;");
+	
+	while ($row = pg_fetch_row($querry)){
+		$echo_row = htmlspecialchars("&lt option value='$row[0]'>$row[0]&lt /option>", ENT_QUOTES);
+		echo $echo_row;
+		echo "</br>";
+	}
+	echo "&lt;option value='$row[0]'>$row[0]&lt;/option>";
+	?>
+</body>
+</html>

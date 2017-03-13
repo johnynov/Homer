@@ -1,0 +1,16 @@
+body {
+	overflow-y: scroll;
+	padding: 0;
+	margin: 0;
+	font-family: myriad-pro;
+	font-size: 22px;
+	width: 200px;
+	margin: 60px auto;
+	text-align: center;
+}
+
+@font-face{
+	font-family: "myriad-pro";
+	src: url('myriad-pro.eot') format('embedded-opentype');
+	url('MyriadPro-Light.otf') format
+}

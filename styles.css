@@ -1,0 +1,11 @@
+body{
+	overflow-y: scroll;
+	padding: 0;
+	margin: 0;
+	font-family: myriad-pro;
+	font-size: 22px;
+	width: 270px;
+	margin: 40px auto;
+	text-align: center;
+	background-image: url("mama.jpg"); 
+}
